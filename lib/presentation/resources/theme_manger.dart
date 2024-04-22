@@ -52,17 +52,17 @@ ThemeData getApplicationTheme() => ThemeData(
       ),
       // Text Theme
       textTheme: TextTheme(
-        displayLarge: getLightStyle(
-          color: ColorManger.white,
-          fontSize: FontSize.size22,
-        ),
-        headlineLarge: getSemiBoldStyle(
+        displayLarge: getSemiBoldStyle(
           color: ColorManger.darkGrey,
           fontSize: FontSize.size16,
         ),
-        titleMedium: getMediumStyle(
-          color: ColorManger.lightGrey,
+        headlineMedium: getRegularStyle(
+          color: ColorManger.darkGrey,
           fontSize: FontSize.size14,
+        ),
+        titleMedium: getMediumStyle(
+          color: ColorManger.primary,
+          fontSize: FontSize.size16,
         ),
         bodyLarge: getRegularStyle(
           color: ColorManger.grey2,
