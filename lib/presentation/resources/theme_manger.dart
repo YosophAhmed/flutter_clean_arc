@@ -52,7 +52,11 @@ ThemeData getApplicationTheme() => ThemeData(
       ),
       // Text Theme
       textTheme: TextTheme(
-        displayLarge: getSemiBoldStyle(
+        displayLarge: getLightStyle(
+          color: ColorManger.white,
+          fontSize: FontSize.size22,
+        ),
+        headlineLarge: getSemiBoldStyle(
           color: ColorManger.darkGrey,
           fontSize: FontSize.size16,
         ),
@@ -60,8 +64,11 @@ ThemeData getApplicationTheme() => ThemeData(
           color: ColorManger.lightGrey,
           fontSize: FontSize.size14,
         ),
-        bodySmall: getRegularStyle(
+        bodyLarge: getRegularStyle(
           color: ColorManger.grey2,
+        ),
+        bodySmall: getRegularStyle(
+          color: ColorManger.grey1,
         ),
       ),
       // Input Decoration Theme
