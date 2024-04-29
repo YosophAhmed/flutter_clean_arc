@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../domain/models.dart';
+import '../../../domain/models/models.dart';
 import '../../resources/routes_manger.dart';
 
 class OnBoardingView extends StatefulWidget {
