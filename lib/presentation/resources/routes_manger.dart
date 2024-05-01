@@ -1,5 +1,5 @@
 import 'package:clean_arc_project/presentation/forgot_password/forgot_password_view.dart';
-import 'package:clean_arc_project/presentation/login/login_view.dart';
+import 'package:clean_arc_project/presentation/login/view/login_view.dart';
 import 'package:clean_arc_project/presentation/main/main_view.dart';
 import 'package:clean_arc_project/presentation/onboarding/view/onboarding_view.dart';
 import 'package:clean_arc_project/presentation/register/register_view.dart';
