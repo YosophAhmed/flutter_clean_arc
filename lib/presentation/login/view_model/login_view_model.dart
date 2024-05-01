@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:clean_arc_project/presentation/base/base_view_model.dart';
 
+import '../../common/freezed_data_classes.dart';
+
 class LoginViewModel
     implements BaseViewModel, LoginViewModelInputs, LoginViewModelOutputs {
   final StreamController _userNameStreamController =
@@ -9,6 +11,11 @@ class LoginViewModel
 
   final StreamController _passwordStreamController =
       StreamController<String>.broadcast();
+
+  var loginObject = LoginObject(
+    '',
+    '',
+  );
 
   // Inputs
   @override
@@ -29,12 +36,22 @@ class LoginViewModel
   @override
   void setUserName({
     required String userName,
-  }) {}
+  }) {
+    inputUserName.add(userName);
+    loginObject = loginObject.copyWith(
+      userName: userName,
+    );
+  }
 
   @override
   void setPassword({
     required String passWord,
-  }) {}
+  }) {
+    inputPassword.add(passWord);
+    loginObject = loginObject.copyWith(
+      password: passWord,
+    );
+  }
 
   @override
   void login() {}
