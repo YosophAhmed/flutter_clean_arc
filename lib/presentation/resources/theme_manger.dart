@@ -62,7 +62,7 @@ ThemeData getApplicationTheme() => ThemeData(
         ),
         titleMedium: getMediumStyle(
           color: ColorManger.primary,
-          fontSize: FontSize.size16,
+          fontSize: FontSize.size14,
         ),
         bodyLarge: getRegularStyle(
           color: ColorManger.grey2,
@@ -89,7 +89,7 @@ ThemeData getApplicationTheme() => ThemeData(
         ),
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(
-            color: ColorManger.primary,
+            color: ColorManger.grey1,
             width: AppSize.size1,
           ),
           borderRadius: const BorderRadius.all(
@@ -100,7 +100,7 @@ ThemeData getApplicationTheme() => ThemeData(
         ),
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(
-            color: ColorManger.grey1,
+            color: ColorManger.primary,
             width: AppSize.size1,
           ),
           borderRadius: const BorderRadius.all(

@@ -16,4 +16,12 @@ class AppStrings {
       'AWESOME FLUTTER APPLICATION USING CLEAN ARCHITECTURE #4';
 
   static const String skip = 'skip';
+
+  static const String userName = 'Username';
+  static const String password = 'Password';
+  static const String userNameError = 'Please enter your Username';
+  static const String passwordError = 'Please enter your Password';
+  static const String login = 'Login';
+  static const String forgetPassword = 'Forget password';
+  static const String registerText = 'Not a member? Sign up';
 }
