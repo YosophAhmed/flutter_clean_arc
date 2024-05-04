@@ -1,3 +1,4 @@
+import 'package:clean_arc_project/app/di.dart';
 import 'package:clean_arc_project/presentation/forgot_password/forgot_password_view.dart';
 import 'package:clean_arc_project/presentation/login/view/login_view.dart';
 import 'package:clean_arc_project/presentation/main/main_view.dart';
@@ -30,6 +31,7 @@ class RouteGenerator {
           builder: (_) => const OnBoardingView(),
         );
       case Routes.loginRoute:
+        initLoginModule();
         return MaterialPageRoute(
           builder: (_) => const LoginView(),
         );

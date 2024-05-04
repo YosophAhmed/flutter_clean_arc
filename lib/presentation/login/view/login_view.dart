@@ -1,3 +1,5 @@
+import 'package:clean_arc_project/app/di.dart';
+
 import 'package:clean_arc_project/presentation/login/view_model/login_view_model.dart';
 import 'package:clean_arc_project/presentation/resources/color_manger.dart';
 import 'package:clean_arc_project/presentation/resources/strings_manger.dart';
@@ -15,7 +17,7 @@ class LoginView extends StatefulWidget {
 }
 
 class _LoginViewState extends State<LoginView> {
-  final LoginViewModel _loginViewModel = LoginViewModel();
+  final LoginViewModel _loginViewModel = instance<LoginViewModel>();
 
   final TextEditingController _userNameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
