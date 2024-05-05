@@ -35,7 +35,7 @@ class _LoginViewState extends State<LoginView> {
     );
     _passwordController.addListener(
       () => _loginViewModel.setPassword(
-        passWord: _userNameController.text,
+        passWord: _passwordController.text,
       ),
     );
   }

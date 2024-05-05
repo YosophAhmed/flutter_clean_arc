@@ -12,7 +12,7 @@ import 'package:get_it/get_it.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-final instance = GetIt.asNewInstance();
+final instance = GetIt.instance;
 
 Future<void> initAppModule() async {
   // shared prefs instance
@@ -29,7 +29,7 @@ Future<void> initAppModule() async {
   );
 
   // network info instance
-  instance.registerLazySingleton<NetworkInfo>(
+  instance.registerLazySingleton<NetworkInfoImpl>(
     () => NetworkInfoImpl(
       InternetConnectionChecker(),
     ),
@@ -49,7 +49,7 @@ Future<void> initAppModule() async {
   );
 
   // Remote dara source
-  instance.registerLazySingleton<RemoteDataSource>(
+  instance.registerLazySingleton<RemoteDataSourceImpl>(
     () => RemoteDataSourceImpl(
       instance<AppServiceClient>(),
     ),
